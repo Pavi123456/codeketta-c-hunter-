@@ -5,8 +5,6 @@ int main(void) {
 	
 	int i=0,j,n,temp,flag=0;
 	scanf("%s",s);
-	scanf("%s",s1);
-	 strcat(s,s1);
    	n=strlen(s);
 	for(i=0;i<n;i++)
 	{
