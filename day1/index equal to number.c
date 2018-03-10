@@ -24,7 +24,11 @@ int main(void) {
 	}
 	
 	}
-	
+	if(flag==0)
+	{
+		printf("-1");
+	}
+
 	
 	
 		// your code goes here
