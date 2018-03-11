@@ -2,17 +2,24 @@
 int main(void)
 {
 	int a[1000];
-	int i,n;
+	int i,j,n,k;
 	scanf("%d",&n);
-	for(i=0;i<n;i++)
+	for(i=1;i<=n;i++)
 	{
 		scanf("%d",&a[i]);
 	}
-	for(i=0;i<n;i++)
+	for(i=1;i<=n;i++)
 	{
-		if(a[i]+a[i+1]==a[i+2])
+		for(j=i+1;j<=n;j++)
 		{
-			printf("%d %d %d",a[i],a[i+1],a[i+2]);
+			for(k=i+2;k<=n;k++)
+			{
+			if(a[i]+a[j]==a[k])
+			{
+				printf("%d %d %d\n",a[i],a[j],a[k]);
+			}
+			}
+
 		}
 	}
 	return 0;
